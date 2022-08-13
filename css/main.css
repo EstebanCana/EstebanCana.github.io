@@ -1,0 +1,241 @@
+* {
+  margin: auto;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 16px;
+  list-style-type: none;
+  text-decoration: none;
+  resize: none;
+  outline: none;
+}
+
+body {
+  background-color: #F3F5FC;
+  width: 100%;
+}
+
+.flex-conteiner {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  width: 98%;
+  margin: auto;
+}
+
+header {
+  height: 100vh;
+  margin: 0;
+}
+
+header img {
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+
+main {
+  margin: 0;
+  margin-top: 20vh;
+  margin-left: 5vw;
+}
+
+#textoRecibido {
+  background-color: #F3F5FC;
+  color: #0A3871;
+  margin: 0;
+  width: 60vw;
+  height: 55vh;
+}
+
+
+#textoRecibido:focus {
+  outline: none;
+}
+
+#aclaracion p {
+  font-size: 12px;
+}
+
+.textoAclaración img {
+  margin: 0;
+}
+
+.textoAclaración p {
+  margin-left: 6px;
+}
+
+textoAclaración {
+  color: #495057;
+}
+
+.btns {
+  margin-top: 5vh;
+}
+
+.btn {
+  border: 1px solid #0A3871;
+  border-radius: 23px;
+  padding: 1.3rem 10vw;
+  transition: all 0.3s;
+}
+
+#btnEncriptar {
+  background-color: #0A3871;
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+
+#btnDesencriptar {
+  background-color: #D8DFE8;
+  color: #0A3871;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 3px 10px #8b8585;
+  cursor: pointer;
+}
+
+#textoDevuelto {
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 32px;
+  box-shadow: 0px 3px 15px #686868;
+  width: 18vw;
+  height: 80vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+#textoDevuelto img {
+  width: 80%;
+  margin-bottom: 0;
+}
+
+#textoDevuelto p {
+  margin: auto;
+  margin-top: 15px;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#output {
+  background-color: #FFFFFF;
+  margin-top: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 63vh;
+  width: 15vw;
+}
+
+#btnCopiar {
+  border: solid 1px #0A3871;
+  color: #0A3871;
+  padding: 1.3rem 5vw;
+  border-radius: 23px;
+}
+
+.disabled {
+  display: none;
+}
+
+.enabled {
+  display: block;
+}
+
+/* Query Tablet */
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    height: 0vh;
+  }
+
+  #textoRecibido {
+    width: 90vw;
+    height: 40vh;
+  }
+
+  #aclaracion {
+    width: 90vw;
+    margin-left: 0;
+  }
+
+  .btns {
+    display: flex;
+    margin-top: 2vh;
+  }
+
+  .btn {
+    padding: 1.3rem 16vw;
+  }
+
+  #textoDevuelto {
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 25px;
+  }
+
+  #textoDevuelto p {
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+  }
+
+  #output{
+    width: 83vw;
+    height: 20vh;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #btnCopiar{
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    padding: 1.3rem 37vw;
+  }
+
+  #munieco {
+    display: none;
+  }
+
+}
+
+/* Query mobile */
+@media (max-width: 426px) {
+  .btns {
+    flex-direction: column;
+  }
+  
+  #btnEncriptar{
+    margin: auto;
+    margin-bottom: 2vh;
+    padding: 1.3rem 37vw;
+  }
+  
+  #btnDesencriptar {
+    margin: 0;
+    padding: 1.3rem 34vw;
+  }
+
+  #textoDevuelto{
+    height: auto;
+  }
+
+  #output{
+    height: 30vh;
+  }
+}

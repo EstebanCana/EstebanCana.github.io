@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="flex-conteiner">
+    <header class="">
+      <img src="./img/logo2.svg" alt="Alura Logo" />
+    </header>
+    
+    <main class="">
+      <div id="textArea" class="" >
+        <textarea id="textoRecibido"" cols="55" rows="15" placeholder="Ingrese el texto aqui" ></textarea>
+      </div>
+      <div id="aclaracion" class="">
+        <div class="textoAclaración flex-conteiner">
+          <img src="./img/signo.svg" alt="icono singno exclamación">
+          <p>Solo letra minusculas y sin acentos</p>
+        </div>
+        <div class="btns ">
+          <a id="btnEncriptar" class="btn">Encriptar</a>
+          <a id="btnDesencriptar" class="btn">Desencriptar</a>
+        </div>
+        <a href=""></a>
+      </div>
+    </main>
+    <div id="textoDevuelto" class="flex-conteiner flex-column">
+      <img src="./img/Munieco.svg" alt="Muñeco" id="munieco" class=""/>
+      <p id="parrafo" class="">Ningun mensaje fue encontrado</p>
+      <textarea id="output" cols="30" rows="10" class="disabled" disabled></textarea>
+      <a id="btnCopiar" class="btn disabled btn-copiar">Copiar</a>
+    </div> 
+    
+    
+  </body>
+  <script src="./JS/mian.js"></script>
+</html>
